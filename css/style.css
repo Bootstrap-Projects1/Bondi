@@ -1,0 +1,177 @@
+:root{
+    --dark:#19283f;
+    --green:#33D1CC;
+    --red:#FF3150;
+    --yellow:#FFC400;
+    --gray:#EFF7FA;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+.main-btn{
+    background-color:var(--red) ;
+    color: var(--yellow);
+}
+.main-btn:hover{
+    background-color:var(--red) ;
+    color: var(--yellow);
+}
+.main-title{
+    margin-bottom: 50px;
+}
+.main-title::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* Start Nav */
+.navbar{
+    background-color: var(--dark);
+    /* font-weight: bold; */
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus{
+    color: var(--green) !important;
+}
+.navbar .search{
+    border-left: 1px solid var(--green);
+}
+/* End Nav */
+
+/* Start landing */
+.landing{
+    background-color: var(--dark);
+    height: calc(100vh - 70px);
+}
+/* End landing */
+
+/* Start Features */
+.features .row{
+    margin-top: 50px;
+}
+.features h3{
+    color: var(--yellow);
+}
+.features .icon-holder{
+
+    height: 200px;
+}
+.features .icon-holder .number{
+    font-size: 200px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: -1; */
+    color: var(--gray);
+}
+.features .icon-holder .icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #33D1CC;
+}
+/* End Features */
+
+/* Start our work */
+.our-work{
+    background-color: var(--gray);
+}
+.our-work .tag li{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.our-work .tag li:not(.active):hover{
+    color: var(--red);
+}
+.our-work .tag .active{
+    background-color: var(--red);
+    color: var(--yellow);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc87;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX( calc(-100% - 5px));
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* End our work */
+
+/* Start Stuff */
+.stuff .dec{
+    width: 500px;
+}
+/* End Stuff */
+
+/* Start team */
+.team{
+    background-color: var(--gray);
+}
+.team .title h2{
+    color: var(--yellow);
+}
+.team .card h4{
+    background-color: var(--green);
+}
+/* End team */
+
+/* Start Project */
+.project{
+    background-color: var(--dark);
+}
+/* End Project */
+
+/* Start subscribe */
+.subscribe{
+    background-color: var(--yellow);
+}
+.subscribe input{
+    border: none;
+    background-color: var(--yellow);
+    border-bottom: 1px solid white;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe .second-btn{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+
+/* End subscribe */
+
+/* Start Footer */
+.footer{
+    background-color: var(--dark);
+}
+
+/* Start Footer */
